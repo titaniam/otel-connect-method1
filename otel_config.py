@@ -7,13 +7,13 @@ OTEL_MODE = "cloud"
 CLOUD_OTEL = {
     # --- Traces (working) ---
     "OTEL_EXPORTER_OTLP_TRACES_ENDPOINT":   "https://otel-tenant1.portal26.in:4318/v1/traces",
-    "OTEL_EXPORTER_OTLP_TRACES_HEADERS":    "Authorization=Basic dGl0YW5pYW06aGVsbG93b3JsZA==",
+    "OTEL_EXPORTER_OTLP_TRACES_HEADERS":    "Authorization=Basic <YOUR_BASE64_CREDENTIALS>",
     "OTEL_EXPORTER_OTLP_TRACES_PROTOCOL":   "http/protobuf",
     "OTEL_TRACES_EXPORTER":                 "otlp",
 
     # --- Logs (endpoint ready, agent-side setup pending) ---
     "OTEL_EXPORTER_OTLP_LOGS_ENDPOINT":     "https://otel-tenant1.portal26.in:4318/v1/logs",
-    "OTEL_EXPORTER_OTLP_LOGS_HEADERS":      "Authorization=Basic dGl0YW5pYW06aGVsbG93b3JsZA==",
+    "OTEL_EXPORTER_OTLP_LOGS_HEADERS":      "Authorization=Basic <YOUR_BASE64_CREDENTIALS>",
     "OTEL_EXPORTER_OTLP_LOGS_PROTOCOL":     "http/protobuf",
     "OTEL_LOGS_EXPORTER":                   "otlp",
 
@@ -27,7 +27,7 @@ CLOUD_OTEL = {
     # --- Metrics (enabled) ---
 
     #"OTEL_EXPORTER_OTLP_METRICS_ENDPOINT":  "https://otel-tenant1.portal26.in:4318/v1/metrics",
-    #"OTEL_EXPORTER_OTLP_METRICS_HEADERS":   "Authorization=Basic dGl0YW5pYW06aGVsbG93b3JsZA==",
+    #"OTEL_EXPORTER_OTLP_METRICS_HEADERS":   "Authorization=Basic <YOUR_BASE64_CREDENTIALS>",
     #"OTEL_EXPORTER_OTLP_METRICS_PROTOCOL":  "http/protobuf",
     #"OTEL_METRICS_EXPORTER":                "otlp",   # ← flip from "none"
 

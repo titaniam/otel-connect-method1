@@ -1,6 +1,3 @@
-# Terraform files with credentials
-*.tfvars
-
 # Python
 __pycache__/
 *.py[cod]
